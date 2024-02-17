@@ -192,7 +192,13 @@
     bottom: -50px;
     left: 20px;
 }
-
+.botones{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+}
 .btn-abajo{
     display: block;
     padding: 8px 25px;
@@ -203,7 +209,6 @@
     color: white;
     font-weight: 700;
     border-radius: 8px;
-    position: absolute;
     cursor: pointer;
     top: 510px;
     transition: 0.3s;
@@ -212,13 +217,6 @@
     background-color: white;
     color: black;
 }
-.reglas{
-    right: 50px;
-}
-.otroJuego{
-    left: 50px;
-}
-
 
 .ganador{
     transform: scale(1);

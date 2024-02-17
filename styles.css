@@ -193,11 +193,14 @@
     left: 20px;
 }
 .botones{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
     margin-top: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 350px;
+
 }
 .btn-abajo{
     display: block;

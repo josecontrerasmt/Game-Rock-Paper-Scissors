@@ -320,14 +320,11 @@
 
 
 @media screen and (max-width:600px) {
-    .btn-abajo{
-        bottom: 20px;
-    }
     .reglas{
-        right: 20px;
+        right: 10px;
     }
     .otroJuego{
-        left: 20px;
+        left: 10px;
     }
     .btn5-tablero2{
         bottom: -55px;

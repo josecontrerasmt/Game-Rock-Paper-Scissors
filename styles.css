@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+    background-image: linear-gradient(hsl(214, 47%, 23%),hsl(238, 81%, 21%));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+.container{
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 12px 20px;
+
+    transform: scale(1);
+    transition: 0.7s;
+}
+.hero img{
+    width: 80px;
+}
+.hero__score{
+    background-color: white;
+    padding: 8px 25px;
+    border-radius: inherit;
+    color: rgb(2, 19, 97);
+    text-align: center;
+}
+.hero__score h2{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 300;
+}
+.hero__score span{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.juegos{
+    margin-top: 100px;
+    text-align: center;
+
+    transform: scale(1);
+    transition: 0.5s;
+}
+.juegos h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.opcionesJuego{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.juego-btn{
+    width: 45%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border: 10px solid rgb(245, 221, 89);
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+.juego-btn:hover{
+    border-color: rgb(255, 0, 0);
+}
+.juego-btn img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Juego 1  */
+
+.juego1{
+    margin-top: 80px;
+}
+.juego2{
+    margin-top: 70px;
+}
+
+.tablero{
+    width: 80%;
+    margin: 0 auto;
+    height: 230px;
+    position: relative;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.tablero img,.tablero2 img{
+    width: 100%;
+    height: 100%;
+}
+.jugador--boton{
+    width: 120px;
+    height: 120px;
+    padding: 25px;
+    border-radius: 50%;
+    border: 13px solid transparent;
+    cursor: pointer;   
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.85);
+}
+.btn-posicion{
+    position: absolute;
+}
+.jugador--boton img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn1{
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn2{
+    top: -40px;
+    left: -20px;
+}
+.btn3{
+    top: -40px;
+    right: -20px;
+}
+.rock{
+    border-color: hsl(349, 70%, 56%);
+}
+.paper{
+    border-color: hsl(230, 89%, 65%);
+}
+.scissors{
+    border-color: hsl(40, 84%, 53%);
+}
+.lizard{
+    border-color: hsl(138, 84%, 53%);
+}
+.spock{
+    border-color: hsl(177, 84%, 53%);
+}
+
+/* juego 2 */
+.tablero2{
+    width: 70%;
+    margin: 0 auto;
+    height: 280px;
+    position: relative;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.btn1-tablero2{
+    bottom: -50px;
+    right: 20px;
+}
+.btn2-tablero2{
+    top: 50px;
+    right: -50px;
+}
+.btn3-tablero2{
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn4-tablero2{
+    top: 50px;
+    left: -50px;
+}
+.btn5-tablero2{
+    bottom: -50px;
+    left: 20px;
+}
+
+.btn-abajo{
+    display: block;
+    padding: 8px 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 40px;
+
+    transition: 0.3s;
+}
+.btn-abajo:hover{
+    background-color: white;
+    color: black;
+}
+.reglas{
+    right: 40px;
+}
+.otroJuego{
+    left: 40px;
+}
+
+
+.ganador{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.jugadores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jugador-title{
+    text-align: center;
+}
+.jugador--ganador{
+    font-size: 2.8em;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.juegoNuevo{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+
+    padding: 10px 0;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.juegoNuevo:hover{
+    background-color: white;
+    color: black;
+}
+.jugador1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.jugador1 span{
+    font-weight: 700;
+}
+
+
+
+.mostrarReglas{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.438);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+.mostrarReglas--active{
+    transform: translateY(0);
+}
+.mostrarReglas figure{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    position: relative;
+}
+.mostrarReglas figure .img{
+    width: 100%;
+    height: 100%;
+}
+.cerrar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.Ganaste{
+    color: hsl(138, 84%, 53%);
+}
+.Perdiste{
+    color: hsl(349, 70%, 56%);
+}
+.Tie{
+    color: hsl(177, 84%, 53%);
+}
+
+
+@media screen and (max-width:600px) {
+    .btn-abajo{
+        bottom: 20px;
+    }
+    .reglas{
+        right: 20px;
+    }
+    .otroJuego{
+        left: 20px;
+    }
+    .btn5-tablero2{
+        bottom: -55px;
+        left: -5px;
+    }
+    .btn1-tablero2{
+        bottom: -55px;
+        right: -5px;
+    }
+
+    .jugador--boton{
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+    .tablero{
+        height: 200px;
+    }
+    .tablero2{
+        height: 230px;
+    }
+    .hero{
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .hero__score{
+        padding: 8px 15px;
+    }
+}
+.ocultar{
+    transform: scale(0);
+    height: 0;
+    margin-top: 0;
+}

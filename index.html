@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fondo">
+   <main class="container">
+      <div class="hero ocultar">
+         <div class="hero__score">
+            <h2>Your Score</h2>
+            <span class="score-you">0</span>
+         </div>
+         <img src="" class="logo" >
+         <div class="hero__score">
+            <h2>Pc Score</h2>
+            <span class="score-pc"">0</span>
+         </div>
+      </div>
+
+      <div class="juegos">
+         <h1>Games</h1>
+         <div class="opcionesJuego">
+            <button class="juego-btn juego1-btn">
+               <img src="images/logo.svg" alt="">
+            </button>
+            <button class="juego-btn juego2-btn">
+               <img src="images/logo-bonus.svg" alt="">
+            </button>
+         </div>
+      </div>
+      
+      <div class="juego1 ocultar">
+         <div class="tab tablero">
+            <img src="images/bg-triangle.svg" alt="imagen">
+            <button class="jugador--boton btn1 rock btn-posicion" id="rock"><img src="images/icon-rock.svg" alt=""></button>
+            <button class="jugador--boton btn2 paper btn-posicion" id="paper"><img src="images/icon-paper.svg" alt=""></button>
+            <button class="jugador--boton btn3 scissors btn-posicion" id="scissors"><img src="images/icon-scissors.svg" alt=""></button>
+         </div>
+      </div>
+
+      <div class="juego2 ocultar">
+         <div class="tab tablero2">
+            <img src="images/bg-pentagon.svg" alt="tablero">
+            <button class="jugador--boton btn1-tablero2 rock btn-posicion" id="rock">
+               <img src="images/icon-rock.svg" alt="">
+            </button>
+            <button class="jugador--boton btn2-tablero2 paper btn-posicion" id="paper">
+               <img src="images/icon-paper.svg" alt="">
+            </button>
+            <button class="jugador--boton btn3-tablero2 scissors btn-posicion" id="scissors">
+               <img src="images/icon-scissors.svg" alt="">
+            </button>
+            <button class="jugador--boton btn4-tablero2 lizard btn-posicion" id="lizard">
+               <img src="images/icon-lizard.svg" alt="">
+            </button>
+            <button class="jugador--boton btn5-tablero2 spock btn-posicion" id="spock">
+               <img src="images/icon-spock.svg" alt="">
+            </button>
+         </div>
+      </div>   
+
+      <div class="ganador ocultar">
+         <div class="jugadores"></div>
+         <div class="jugador-title">
+         </div>
+         <button class="juegoNuevo">Play again</button>
+      </div>
+
+   </main>
+   <footer>
+      <button class="btn-abajo reglas ocultar">Rules</button>
+      <button class="btn-abajo otroJuego ocultar">Back</button>
+      <div class="mostrarReglas">
+         <figure>
+            <img src="" class="img">
+            <button class="cerrar"><img src="images/icon-close.svg" alt="cerrar"></button>
+         </figure>
+      </div>
+   </footer>
+   <script src="index.js" type="module"></script>
+</body>
+</html>
